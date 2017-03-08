@@ -1,0 +1,80 @@
+* {
+    text-align: center;
+}
+
+html body {
+    width: 100%;
+    margin:0;
+}
+
+header{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin: 0 auto;
+    background: black;
+    color: white;
+}
+
+footer{
+    height: 150px;
+    margin:0 auto;
+    background: black;
+    color: white;
+}
+
+section {
+    margin: 100px auto;
+    width: 60%;
+}
+
+.about_cell{
+    display: inline-block;
+    background: lightcyan;
+    width: 160px;
+    height: 250px;
+    padding:0px 20px 0px 20px;
+    margin:10px;
+}
+
+/*メニュー周り*/
+
+.main_menu{
+    margin:auto;
+    width: 100%;
+    background-color: black;
+    border-top:1px solid #7f7f7f; 
+    border-bottom:1px solid #7f7f7f; 
+}
+
+.menu_name{
+    display: inline-block;
+    color: white;
+    padding:10px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+}
+
