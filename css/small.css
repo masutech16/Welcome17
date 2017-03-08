@@ -54,6 +54,6 @@ ul li {
 }
 /*こっちの画面で使わないものを非表示設定*/
 
-.large{
+.menu_large{
     display: none;
 }

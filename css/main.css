@@ -31,16 +31,25 @@ section {
 
 .about_cell{
     display: inline-block;
-    background: lightcyan;
+
+    background: lightgreen;
+
     width: 160px;
     height: 250px;
     padding:0px 20px 0px 20px;
     margin:10px;
+
+    border-radius: 10px;
+}
+
+.subtitle{
+    font-weight: bold;
+    color: white;
 }
 
 /*メニュー周り*/
 
-.main_menu{
+.main{
     margin:auto;
     width: 100%;
     background-color: black;

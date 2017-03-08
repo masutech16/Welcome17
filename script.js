@@ -1,5 +1,5 @@
 $(function() {
-    var nav = $('.main_menu');
+    var nav = $('.main');
     var offset = nav.offset();
     var windowHeight = $(window).height();
 
@@ -24,18 +24,20 @@ $(function() {
         if(nav.hasClass('fixed') == false){
             target_top -= 46;
         }
-        //改善の余地あり
-        $('html,body').animate({scrollTop:target_top},'slow');
-        if($('.main_menu').css('display') == 'none'){
+        if($('drawr').css('display') != 'none'){
             closeDrawr();
         }
+
+
+        //改善の余地あり
+        $('html,body').animate({scrollTop:target_top},'slow');
     });
 
     //ドロワーメニュー表示
     $('.drawr').css('height',windowHeight)
     $('.open_menu').click(function() {
         $('.drawr').animate({width:'toggle'});
-        $('.main_menu').hide();
+        $('.main').hide();
     });
 
     //ドロワーメニューを閉じる
@@ -46,6 +48,6 @@ $(function() {
 
 const closeDrawr = () => {
     $('.drawr').animate({width:'toggle'},'normal',function() {
-        $('.main_menu.small').show();
+        $('.main.menu_small').show();
     });
 }
