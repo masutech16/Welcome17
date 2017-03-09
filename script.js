@@ -48,9 +48,7 @@ $(function() {
 
     //リサイズ処理
     $(window).on('resize',function() {
-        var boundry = 680;
-        var width = $(window).width();
-        if(width > boundry){
+        if(window.matchMedia('(min-width: 680px)').matches){
             $('.menu_large').css({
                 'display': 'block'
             });
@@ -58,9 +56,16 @@ $(function() {
                 'display': 'none'
             })
         } else {
+            console.log('called this');
             $('.menu_large').css({
                 'display': 'none'
-                });
+            });
+            $('.menu_small').css({
+                'display': 'block'
+            })
+            $('.drawr').css({
+                'display': 'none'
+            })
         }
     })
 });
