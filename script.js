@@ -56,7 +56,6 @@ $(function() {
                 'display': 'none'
             })
         } else {
-            console.log('called this');
             $('.menu_large').css({
                 'display': 'none'
             });

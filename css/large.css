@@ -1,3 +1,12 @@
 .menu_small{
     display: none;
 }
+
+.menu_name{
+    color: white;
+
+    padding:10px;
+    margin-left: 10px;
+    float: left;
+
+}
