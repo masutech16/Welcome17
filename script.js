@@ -48,23 +48,26 @@ $(function() {
 
     //リサイズ処理
     $(window).on('resize',function() {
-        if(window.matchMedia('(min-width: 680px)').matches){
+        if(window.matchMedia('(min-width: 681px)').matches){
             $('.menu_large').css({
                 'display': 'block'
             });
+            $('.menu_small').css({
+                'display': 'none'
+            });
             $('.drawr').css({
                 'display': 'none'
-            })
+            });
         } else {
             $('.menu_large').css({
                 'display': 'none'
             });
             $('.menu_small').css({
                 'display': 'block'
-            })
+            });
             $('.drawr').css({
                 'display': 'none'
-            })
+            });
         }
     })
 });
