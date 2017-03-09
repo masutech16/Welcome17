@@ -17,21 +17,22 @@ $(function() {
     //基本メニューによる画面移動処理
     $('.scroll').click(function(e){
         e.preventDefault();
-
         var url = this.href;
-        var target = url.split("#")[1];
-        var target_top = $("#"+ target).offset().top - 70;
-        if(nav.hasClass('fixed') == false){
-            target_top -= 46;
-        }
-        if($('drawr').css('display') != 'none'){
-            closeDrawr();
-        }
-
-
-        //改善の余地あり
-        $('html,body').animate({scrollTop:target_top},'slow');
+        scrollView(url);
     });
+
+    //ドロワーメニューによる画面移動処理
+    $('.drawr_scroll').click(function(e){
+        e.preventDefault();
+        console.log("called");
+        var url = this.href;
+        scrollView(url);
+        $('.drawr').animate({ width: 'toggle' }, {
+            complete: function () {
+                $('.main.menu_small').show();
+            }
+        });
+    })
 
     //ドロワーメニュー表示
     $('.drawr').css('height',windowHeight)
@@ -44,7 +45,34 @@ $(function() {
     $('.close_menu').click(function(e) {
         closeDrawr();
     });
+
+    //リサイズ処理
+    $(window).on('resize',function() {
+        var boundry = 680;
+        var width = $(window).width();
+        if(width > boundry){
+            $('.menu_large').css({
+                'display': 'block'
+            });
+            $('.drawr').css({
+                'display': 'none'
+            })
+        } else {
+            $('.menu_large').css({
+                'display': 'none'
+                });
+        }
+    })
 });
+
+const scrollView = (url) => {
+        var target = url.split("#")[1];
+        var target_top = $("#"+ target).offset().top - 70;
+        if($('.main').hasClass('fixed') == false){
+            target_top -= 46;
+        }
+        $('html,body').animate({scrollTop:target_top},'slow');
+}
 
 const closeDrawr = () => {
     $('.drawr').animate({width:'toggle'},'normal',function() {

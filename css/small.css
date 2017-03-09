@@ -3,13 +3,12 @@
     background: black;
     height: 24px;
 
-    margin: 10px auto 10px 10px;   
+    margin: 10px auto 10px 20px;   
 }
 
 .top, .middle, .bottom {
     width: 32px;
     height: 4px;
-    margin-left:10px;
     margin-right: auto;
 
     background: white;
