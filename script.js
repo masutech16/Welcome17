@@ -1,11 +1,10 @@
 $(function() {
-    var nav = $('.main');
-    var offset = nav.offset();
+    var offset = $('.main').offset();
     var windowHeight = $(window).height();
 
 
     $(window).scroll(function () {
-        fixMenu();
+        fixMenu(offset);
 
         //アニメーション管理
         var topWindow = $(window).scrollTop();
@@ -91,14 +90,12 @@ const closeDrawr = () => {
     });
 }
 
-const fixMenu = () => {
-    var nav = $('.main');
-    var offset = nav.offset();
+const fixMenu = (offset) => {
     var adjustment = $('#about').offset().top - 20;
     //メインメニュー固定
     if ($(window).scrollTop() > offset.top + adjustment) {
-        nav.addClass('fixed');
+        $('.main').addClass('fixed');
     } else {
-        nav.removeClass('fixed');
+        $('.main').removeClass('fixed');
     }
 }
