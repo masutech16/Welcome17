@@ -49,16 +49,16 @@ html body {
 /*header,footer*/
 
 header{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 20%;
-    padding-left: 20%;
+    padding: 10% 20% 10% 20%;
     margin: 0 auto;
-    height: 350px;
+
 
     background-image: url("../img/landfall.JPG");
+    background-size: cover;
+
     color: white;
 }
+
 
 footer{
     height: 150px;
@@ -76,6 +76,7 @@ section {
 
 .about_cell{
     display: inline-block;
+    visibility: hidden;
 
     background: lightgreen;
     border-radius: 10px;
@@ -91,6 +92,9 @@ section {
 }
 
 .subtitle{
+    margin: 10px auto;
+
+
     font-weight: bold;
     color: white;
 }
@@ -99,7 +103,7 @@ section {
 .img_icon {
     width:64px;
     height: 64px;
-    margin:auto;
+    margin:20px auto auto auto;
 
     background-image: url('../img/sample.png');
 }

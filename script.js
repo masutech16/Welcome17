@@ -3,15 +3,19 @@ $(function() {
     var offset = nav.offset();
     var windowHeight = $(window).height();
 
-    //メニュー固定処理
+
     $(window).scroll(function () {
-        var adjustment = $('#about').offset().top - 20;
-        //メインメニュー
-        if ($(window).scrollTop() > offset.top + adjustment) {
-            nav.addClass('fixed');
-        } else {
-            nav.removeClass('fixed');
-        }
+        fixMenu();
+
+        //アニメーション管理
+        var topWindow = $(window).scrollTop();
+        $('.animation').each(function(){
+            var targetPosition = $(this).offset().top;
+            if(topWindow > targetPosition - windowHeight + 100){
+                $(this).css({'visibility': 'visible'});
+                $(this).addClass("animated bounceInUp");
+            }
+        });
     });
 
     //基本メニューによる画面移動処理
@@ -85,4 +89,16 @@ const closeDrawr = () => {
     $('.drawr').animate({width:'toggle'},'normal',function() {
         $('.main.menu_small').show();
     });
+}
+
+const fixMenu = () => {
+    var nav = $('.main');
+    var offset = nav.offset();
+    var adjustment = $('#about').offset().top - 20;
+    //メインメニュー固定
+    if ($(window).scrollTop() > offset.top + adjustment) {
+        nav.addClass('fixed');
+    } else {
+        nav.removeClass('fixed');
+    }
 }
