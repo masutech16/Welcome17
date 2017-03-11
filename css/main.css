@@ -3,14 +3,9 @@
 .main{
     margin:auto;
     width: 100%;
-    background-color: black;
-    border-top:1px solid #7f7f7f; 
-    border-bottom:1px solid #7f7f7f; 
-}
-
-ul li a{
-    color: white;
-    text-decoration: none;
+    background-color: #73cff2;
+    border-top:1px solid #17b0ea; 
+    border-bottom:1px solid #17b0ea; 
 }
 
 .fixed {
@@ -26,8 +21,6 @@ ul{
 }
 
 ul li{
-    display: inline-block;
-
     list-style: none;
 
     margin: auto;
@@ -37,11 +30,21 @@ ul li{
 
 /*全体のデザイン*/
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 * {
     text-align: center;
 }
 
-html body {
+html {
+    background-color: black;
+}
+
+body {
+    background-color: #f8fcfb;
     width: 100%;
     margin:0;
 }
@@ -70,25 +73,27 @@ footer{
 section {
     margin: 100px auto;
     width: 60%;
+    color: #444;
 }
 
 /*about関係*/
+
+
 
 .about_cell{
     display: inline-block;
     visibility: hidden;
 
-    background: lightgreen;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
+    background: #ceffce;
+    border-radius: 6px;
+
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #ceffce;
 
     width: 160px;
     height: 200px;
     padding:0px 20px 0px 20px;
     margin:10px;
-
-
 }
 
 .subtitle{
@@ -96,7 +101,12 @@ section {
 
 
     font-weight: bold;
-    color: white;
+    color: #444;
+}
+
+.about_cell a {
+    color:#444;
+
 }
 
 
@@ -107,4 +117,3 @@ section {
 
     background-image: url('../img/sample.png');
 }
-

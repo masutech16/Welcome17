@@ -10,3 +10,6 @@
     float: left;
     width:100px;
 }
+ul li{
+    display: table-cell;
+}
