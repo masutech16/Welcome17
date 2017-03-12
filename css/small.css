@@ -1,6 +1,6 @@
 /*ハンバーガーアイコン関係*/
 .humberger {
-    background: black;
+    background: #73cff2;
     height: 24px;
 
     margin: 10px auto 10px 20px;   
@@ -35,16 +35,16 @@
     display: none;
     position: fixed;
     width:220px;
-    background: black;
+    background: #73cff2;
     z-index: 10001;
-    border-right:1px solid #7f7f7f;
+    border-right:1px solid #17b0ea;
 }
 
 ul li {
     display: inline-block;
     width:200px;
     height: 25px;
-    border-bottom: 1px solid #7f7f7f;
+    border-bottom: 1px solid #17b0ea;
 }
 
 .close_menu {

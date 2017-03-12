@@ -70,11 +70,15 @@ footer{
     color: white;
 }
 
-section {
+#about,
+#event,
+#gallary,
+#access {
     margin: 100px auto;
     width: 60%;
     color: #444;
 }
+
 
 /*about関係*/
 
@@ -82,7 +86,6 @@ section {
 
 .about_cell{
     display: inline-block;
-    visibility: hidden;
 
     background: #ceffce;
     border-radius: 6px;
@@ -109,11 +112,48 @@ section {
 
 }
 
-
 .img_icon {
     width:64px;
     height: 64px;
     margin:20px auto auto auto;
 
     background-image: url('../img/sample.png');
+}
+
+/*animation*/
+.animation {
+    visibility: hidden;
+}
+
+/*introduction*/
+
+#interview {
+    width: 100%;
+    background: white;
+    padding-bottom: 50px;
+}
+
+.intro_title {
+    background: lightyellow; /*明日ビラを見て変える*/
+}
+
+.intro_right {
+    width: 60%;
+    background: rgba(186, 85, 211, 0.2);
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: 5%;
+    text-align: left;
+    padding: 10px;
+}
+
+.intro_left {
+    width: 60%;
+    background: rgba(186, 85, 211, 0.2);
+    margin-top:70px;
+    text-align: left;
+    margin-left: auto;
+    margin-left: 5%;
+
+    padding: 10px;
 }

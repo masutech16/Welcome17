@@ -11,8 +11,15 @@ $(function() {
         $('.animation').each(function(){
             var targetPosition = $(this).offset().top;
             if(topWindow > targetPosition - windowHeight + 100){
-                $(this).css({'visibility': 'visible'});
-                $(this).addClass("animated bounceInUp");
+                if($(this).hasClass('BIU')){
+                    setAnimation($(this),"bounceInUp");
+                }
+                if($(this).hasClass('FIR')){
+                    setAnimation($(this),'fadeInRight');
+                }
+                if($(this).hasClass('FIL')){
+                    setAnimation($(this),'fadeInLeft');
+                }
             }
         });
     });
@@ -98,4 +105,10 @@ const fixMenu = (offset) => {
     } else {
         $('.main').removeClass('fixed');
     }
+}
+
+const setAnimation = (jQueryObject,AnimationName) => {
+    jQueryObject.css({'visibility': 'visible'});
+    jQueryObject.addClass("animated "+ AnimationName);
+    
 }
