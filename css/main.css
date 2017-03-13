@@ -147,7 +147,7 @@ footer{
 }
 
 #interview {
-    background-image: none;
+    background-image: url('../img/writing.JPG');
 }
 
 #writing {
@@ -155,7 +155,7 @@ footer{
 }
 
 #design{
-    background-image: none;
+    background-image: url('../img/writing.JPG');
 }
 
 #meeting {
