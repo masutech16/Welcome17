@@ -167,7 +167,7 @@ footer{
     padding-right: 10px;
     padding-left: 10px;
     color: #444; 
-    background-color: rgba(246, 246, 255, 0.7);
+    background-color: rgba(238, 248, 245, 0.7);
     border-radius: 5px;
 }
 
@@ -190,9 +190,9 @@ footer{
 }
 
 .purple {
-    background: rgba(255, 255, 236, 0.7);
+    background: rgba(244, 255, 230, 0.7);
 }
 
 .yellow {
-    background: rgba(255, 255, 236, 0.7);
+    background: rgba(244, 255, 230, 0.7);
 }
