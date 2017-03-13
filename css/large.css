@@ -5,8 +5,10 @@
 .menu_name{
     color: white;
 
-    padding:10px;
-    margin-left: 10px;
+    border:solid white 3px;
+
+    padding:0px;
+    margin: 7px 7px 7px 17px;
     float: left;
     width:100px;
 }
