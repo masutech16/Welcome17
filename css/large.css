@@ -15,3 +15,7 @@
 ul li{
     display: table-cell;
 }
+
+img {
+    width: 60%;
+}

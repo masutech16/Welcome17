@@ -14,9 +14,6 @@ $(function() {
                 if($(this).hasClass('BIU')){
                     setAnimation($(this),"bounceInUp");
                 }
-                if($(this).hasClass('FIR')){
-                    setAnimation($(this),'fadeInRight');
-                }
                 if($(this).hasClass('FIL')){
                     setAnimation($(this),'fadeInLeft');
                 }
