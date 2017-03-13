@@ -167,10 +167,12 @@ footer{
     padding-right: 10px;
     padding-left: 10px;
     color: #444; 
+    background-color: rgba(246, 246, 255, 0.7);
+    border-radius: 5px;
 }
 
 .intro_sentence {
-    color: #111;
+    color: #444;
     width: 50%;
     margin-top: 70px;
     margin-left: auto;
@@ -188,9 +190,9 @@ footer{
 }
 
 .purple {
-    background: rgba(186, 85, 211, 0.7);
+    background: rgba(255, 255, 236, 0.7);
 }
 
 .yellow {
-    background: rgba(255, 241, 15, 0.7);
+    background: rgba(255, 255, 236, 0.7);
 }
