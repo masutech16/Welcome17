@@ -127,19 +127,43 @@ footer{
 
 /*introduction*/
 
-#interview {
+#interview,
+#writing,
+#design,
+#meeting {
     width: 100%;
-    background: white;
     padding-bottom: 50px;
+    background-size: cover;
+    border: solid 1px #444;
+}
+
+#interview {
+    background-image: none;
+}
+
+#writing {
+    background-image: url('../img/writing.jpg');
+}
+
+#design{
+    background-image: none;
+}
+
+#meeting {
+    background-image: url('../img/meeting.JPG');
+    background-position: bottom;
 }
 
 .intro_title {
-    background: lightyellow; /*明日ビラを見て変える*/
+    background: rgba(186, 85, 211, 0.5);
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #444; 
 }
 
 .intro_right {
     width: 60%;
-    background: rgba(186, 85, 211, 0.2);
+    background: rgba(186, 85, 211, 0.5);
     margin-top: 70px;
     margin-left: auto;
     margin-right: 5%;
@@ -149,7 +173,7 @@ footer{
 
 .intro_left {
     width: 60%;
-    background: rgba(186, 85, 211, 0.2);
+    background: rgba(186, 85, 211, 0.5);
     margin-top:70px;
     text-align: left;
     margin-left: auto;
@@ -158,6 +182,6 @@ footer{
     padding: 10px;
 }
 
-.map {
+img {
     width: 60%;
 }
