@@ -164,21 +164,24 @@ footer{
 }
 
 .intro_title {
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #444; 
-    background-color: rgba(238, 248, 245, 0.7);
-    border-radius: 5px;
+    padding: 5px 135px 5px 135px;
+    color: #024; 
+    background-color: rgba(218, 248, 255, 0.7);
+    border-style: double;
+    border-color: white;
+    border-width: 5px;
 }
 
 .intro_sentence {
-    color: #444;
+    color: #024;
     width: 50%;
     margin-top: 70px;
     margin-left: auto;
-    margin-right: 5%;
+    margin-right: 10%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px 0px 40px 0px;
+    font-size: 140%;
+    background: rgba(230, 255, 210, 0.7);
 }
 
 .right {
@@ -187,12 +190,4 @@ footer{
 
 .left {
     margin-left: 5%;
-}
-
-.purple {
-    background: rgba(244, 255, 230, 0.7);
-}
-
-.yellow {
-    background: rgba(244, 255, 230, 0.7);
 }
