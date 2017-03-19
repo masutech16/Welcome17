@@ -120,12 +120,26 @@ footer{
 
 }
 
-.img_icon {
+.icon {
     width:64px;
     height: 64px;
     margin:20px auto auto auto;
+}
 
-    background-image: url('../img/sample.png');
+.interview_img {
+    background-image: url("../img/interview_icon.jpg");
+}
+
+.writing_img {
+    background-image: url("../img/writing_icon.jpg");
+}
+
+.design_img {
+    background-image: url("../img/design_icon.jpg");
+}
+
+.meeting_img {
+    background-image: url("../img/meeting_icon.jpg");
 }
 
 /*animation*/
