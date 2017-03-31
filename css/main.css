@@ -161,7 +161,7 @@ footer{
 }
 
 #interview {
-    background-image: url('../img/writing.JPG');
+    background-image: url('../img/interview.JPG');
 }
 
 #writing {
@@ -169,7 +169,7 @@ footer{
 }
 
 #design{
-    background-image: url('../img/writing.JPG');
+    background-image: url('../img/design.JPG');
 }
 
 #meeting {
@@ -178,7 +178,7 @@ footer{
 }
 
 .intro_title {
-    padding: 5px 135px 5px 135px;
+    padding: 0.3% 5% 0.3% 5%;
     color: #024; 
     background-color: rgba(218, 248, 255, 0.7);
     border-style: double;
